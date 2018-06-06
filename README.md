@@ -82,6 +82,8 @@ egyptian.n.01 0.1210250472607995836 -0.01964832136051103934
 ...
 ```
 
+Note that the vectors are points in the Poincaré ball model (even though the hyperboloid model is used during training).
+
 ## Evaluation
 
 The script `evaluate` measures the performance of the trained embeddings:
