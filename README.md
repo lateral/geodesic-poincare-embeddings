@@ -54,8 +54,8 @@ $ ./poincare
 To achieve burn-in, just train twice, initialising the second time with the vectors trained during the first time (i.e. during burn-in).  For example:
 
 ```
-./poincare -graph wordnet/mammal_closure.tsv -number-negatives 2 -epochs 40 -output-vectors vectors-after-burnin.csv -start-lr 0.005 -end-lr 0.005 -distribution-power 1
-./poincare -graph wordnet/mammal_closure.tsv -number-negatives 20 -epochs 500 -input-vectors vectors-after-burnin.csv -output-vectors vectors.csv -start-lr 0.5 -end-lr 0.5 -distribution-power 0
+./poincare -graph ../wordnet/mammal_closure.tsv -number-negatives 2 -epochs 40 -output-vectors vectors-after-burnin.csv -start-lr 0.005 -end-lr 0.005 -distribution-power 1
+./poincare -graph ../wordnet/mammal_closure.tsv -number-negatives 20 -epochs 500 -input-vectors vectors-after-burnin.csv -output-vectors vectors.csv -start-lr 0.5 -end-lr 0.5 -distribution-power 0
 ```
 
 ### Retraction vs exponential map updates
